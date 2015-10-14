@@ -40,7 +40,7 @@
 				int n = ps.executeUpdate();
 					// 이 숫자가 의미하는게, 테이블에 조작이 일어난 행의 갯수
 				
-				if (n>0) {out.println("<h3>작업 성공</h3>");}
+				if (n>0) {out.println("<h3>작업 성공" + n + "</h3>");}
 				
 				// 4. 작업 후 마무리--연결 끊기
 					// db 작업시 사용되었던 것들 close 요청
