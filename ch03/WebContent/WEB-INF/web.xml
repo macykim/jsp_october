@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ch03</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+<!-- 서블릿 등록 -->
+  <servlet>
+  	<servlet-name>ie01</servlet-name>
+  	<servlet-class>it.Example</servlet-class>
+  </servlet>
+<!-- 서블릿 매핑 -->
+  <servlet-mapping>
+  	<servlet-name>ie01</servlet-name>
+  	<url-pattern>/ie01.it</url-pattern>
+  </servlet-mapping>
+  
+<!-- 서블릿 등록 -->
+  <servlet>
+  	<servlet-name>ie02</servlet-name>
+  	<servlet-class>it.Example02</servlet-class>
+  </servlet>
+<!-- 서블릿 매핑 -->
+  <servlet-mapping>
+  	<servlet-name>ie02</servlet-name>
+  	<url-pattern>/ie02.it</url-pattern>
+  </servlet-mapping>
+  
+<!-- 서블릿 등록 -->
+  <servlet>
+  	<servlet-name>ScoreCheck</servlet-name>
+  	<servlet-class>it.ScoreCheck</servlet-class>
+  </servlet>
+<!-- 서블릿 매핑 -->
+  <servlet-mapping>
+  	<servlet-name>ScoreCheck</servlet-name>
+  	<url-pattern>/ScoreCheck.it</url-pattern>
+  </servlet-mapping>
+</web-app>
